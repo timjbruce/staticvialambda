@@ -1,0 +1,18 @@
+{
+    "items": [
+        {
+            "path": "/", 
+            "id": "qx6f2t2xhg"
+        }, 
+        {
+            "path": "/{proxy+}", 
+            "resourceMethods": {
+                "OPTIONS": {}, 
+                "GET": {}
+            }, 
+            "id": "uip0mt", 
+            "pathPart": "{proxy+}", 
+            "parentId": "qx6f2t2xhg"
+        }
+    ]
+}

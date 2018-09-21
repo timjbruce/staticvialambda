@@ -1,0 +1,1297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="index_files/stylesheet.css">
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="index_files/source-serif-pro.css">
+  <link rel="stylesheet" type="text/css" href="index_files/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="index_files/bootstrap-theme.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Boto 3 Documentation — Boto 3 Docs 1.9.8 documentation</title>
+    
+    <link rel="stylesheet" href="index_files/guzzle.css" type="text/css">
+    <link rel="stylesheet" href="index_files/pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.9.8',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="index_files/jquery.js"></script>
+    <script type="text/javascript" src="index_files/underscore.js"></script>
+    <script type="text/javascript" src="index_files/doctools.js"></script>
+    <link rel="top" title="Boto 3 Docs 1.9.8 documentation" href="#">
+    <link rel="next" title="Quickstart" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html">
+  
+   
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/genindex.html" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/py-modindex.html" title="Python Module Index">modules</a> |</li>
+        <li class="right">
+          <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html" title="Quickstart" accesskey="N">next</a> |</li>
+        <li><a href="#">Boto 3 Docs 1.9.8 documentation</a> »</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar"><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html#" class="text-logo">Boto 3 Docs 1.9.8 documentation</a><div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Table Of Contents</h2>
+  </div>
+  <div class="sidebar-toc">
+    
+    
+      <ul>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html">A Sample Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/examples.html">Code Examples</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/index.html">User Guides</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html">Available Services</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/index.html">Core References</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/index.html">Customization References</a></li>
+</ul>
+
+    
+  </div>
+</div>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" class="form-control" placeholder="Search..." type="text">
+        </div>
+        <input name="check_keywords" value="yes" type="hidden">
+        <input name="area" value="default" type="hidden">
+      </form>
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+        <div id="right-column">
+          
+
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="#">Docs</a></li>
+              
+              <li>Boto 3 Documentation</li>
+            </ol>
+          </div>
+          
+<!--REGION_DISCLAIMER_DO_NOT_REMOVE-->
+          <div class="document clearer body">
+            
+  <div class="section" id="boto-3-documentation">
+<h1>Boto 3 Documentation<a class="headerlink" href="#boto-3-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Boto is the Amazon Web Services (AWS) SDK for Python, which allows Python
+developers to write software that makes use of Amazon services like S3 and
+EC2. Boto provides an easy to use, object-oriented API as well as low-level
+direct service access.</p>
+<div class="section" id="quickstart">
+<h2>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html">Quickstart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html#using-boto-3">Using Boto 3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html">A Sample Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html#sqs">SQS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html#creating-a-queue">Creating a Queue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html#using-an-existing-queue">Using an Existing Queue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html#sending-messages">Sending Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs.html#processing-messages">Processing Messages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/examples.html">Code Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cw-examples.html">Amazon CloudWatch Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/ec2-examples.html">Amazon EC2 Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/iam-examples.html">AWS Identity and Access Management Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-examples.html">Amazon S3 Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/sqs-examples.html">Amazon SQS Examples</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="user-guide">
+<h2>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/index.html">User Guides</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/index.html#migration-guides">Migration Guides</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/new.html">What's New</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/new.html#major-features">Major Features</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/new.html#botocore">Botocore</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migration.html">Migrating from Boto 2.x</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migration.html#high-level-concepts">High Level Concepts</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migration.html#data-driven">Data Driven</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migration.html#resource-objects">Resource Objects</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migration.html#installation-configuration">Installation &amp; Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migration.html#services">Services</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrations3.html">Amazon S3</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrations3.html#creating-the-connection">Creating the Connection</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrations3.html#creating-a-bucket">Creating a Bucket</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrations3.html#storing-data">Storing Data</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrations3.html#accessing-a-bucket">Accessing a Bucket</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrations3.html#deleting-a-bucket">Deleting a Bucket</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrations3.html#iteration-of-buckets-and-keys">Iteration of Buckets and Keys</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrations3.html#access-controls">Access Controls</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrations3.html#key-metadata">Key Metadata</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrations3.html#managing-cors-configuration">Managing CORS Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrationec2.html">Amazon EC2</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrationec2.html#creating-the-connection">Creating the Connection</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrationec2.html#launching-new-instances">Launching New Instances</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrationec2.html#stopping-terminating-instances">Stopping &amp; Terminating Instances</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrationec2.html#checking-what-instances-are-running">Checking What Instances Are Running</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrationec2.html#checking-health-status-of-instances">Checking Health Status Of Instances</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrationec2.html#working-with-ebs-snapshots">Working with EBS Snapshots</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrationec2.html#creating-a-vpc-subnet-and-gateway">Creating a VPC, Subnet, and Gateway</a></li>
+<li class="toctree-l6"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/migrationec2.html#attaching-and-detaching-an-elastic-ip-and-gateway">Attaching and Detaching an Elastic IP and Gateway</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/upgrading.html">Upgrading Notes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/upgrading.html#id1">1.9.0</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/upgrading.html#what-changed">What Changed</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/upgrading.html#why-was-the-change-was-made">Why Was The Change Was Made</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/upgrading.html#how-do-i-know-if-i-m-impacted">How Do I Know If I'm Impacted</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/upgrading.html#how-do-i-update-my-code">How Do I Update My Code</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/upgrading.html#id2">1.4.2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/upgrading.html#id3">1.4.0</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/index.html#general-feature-guides">General Feature Guides</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/resources.html">Resources</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/resources.html#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/resources.html#identifiers-attributes-intro">Identifiers &amp; Attributes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/resources.html#actions">Actions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/resources.html#references">References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/resources.html#sub-resources">Sub-resources</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/resources.html#waiters">Waiters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/resources.html#multithreading-multiprocessing">Multithreading / Multiprocessing</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/collections.html">Collections</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/collections.html#overview">Overview</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/collections.html#when-collections-make-requests">When Collections Make Requests</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/collections.html#filtering">Filtering</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/collections.html#chainability">Chainability</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/collections.html#limiting-results">Limiting Results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/collections.html#controlling-page-size">Controlling Page Size</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/collections.html#batch-actions">Batch Actions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/clients.html">Low-level Clients</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/clients.html#creating-clients">Creating Clients</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/clients.html#service-operations">Service Operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/clients.html#handling-responses">Handling Responses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/clients.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html">Paginators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html#creating-paginators">Creating Paginators</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html#customizing-page-iterators">Customizing Page Iterators</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html#filtering-results">Filtering results</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/paginators.html#filtering-results-with-jmespath">Filtering Results with JMESPath</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/session.html">Session</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/session.html#default-session">Default Session</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/session.html#custom-session">Custom Session</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html">Credentials</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#interactive-configuration">Interactive Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#configuring-credentials">Configuring Credentials</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#method-parameters">Method Parameters</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#environment-variables">Environment Variables</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#shared-credentials-file">Shared Credentials File</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#aws-config-file">AWS Config File</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#assume-role-provider">Assume Role Provider</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#boto2-config">Boto2 Config</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#iam-role">IAM Role</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#best-practices-for-configuring-credentials">Best Practices for Configuring Credentials</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#configuration">Configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#environment-variable-configuration">Environment Variable Configuration</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html#configuration-file">Configuration File</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/events.html">Extensibility Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/events.html#an-introduction-to-the-event-system">An Introduction to the Event System</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/events.html#a-hierarchical-structure">A Hierarchical Structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/events.html#wildcard-matching">Wildcard Matching</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/events.html#isolation-of-event-systems">Isolation of Event Systems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/events.html#boto3-specific-events">Boto3 Specific Events</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/events.html#creating-client-class">creating-client-class</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/events.html#creating-resource-class">creating-resource-class</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/events.html#provide-client-params">provide-client-params</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/index.html#service-feature-guides">Service Feature Guides</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cloud9.html">Cloud9</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cloud9.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cloud9.html#step-1-set-up-your-aws-account">Step 1: Set Up Your AWS Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cloud9.html#step-2-create-an-environment">Step 2: Create an Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cloud9.html#step-3-set-up-credentials">Step 3: Set Up Credentials</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cloud9.html#step-4-install-boto-3">Step 4: Install Boto 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cloud9.html#step-5-download-example-code">Step 5: Download Example Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cloud9.html#step-6-run-and-debug-code">Step 6: Run and Debug Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/cloud9.html#next-steps">Next Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html">DynamoDB</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html#creating-a-new-table">Creating a New Table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html#using-an-existing-table">Using an Existing Table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html#creating-a-new-item">Creating a New Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html#getting-an-item">Getting an Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html#updating-item">Updating Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html#deleting-item">Deleting Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html#batch-writing">Batch Writing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html#querying-and-scanning">Querying and Scanning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html#deleting-a-table">Deleting a Table</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3.html">S3</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3.html#changing-the-addressing-style">Changing the Addressing Style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3.html#using-the-transfer-manager">Using the Transfer Manager</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3.html#uploads">Uploads</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3.html#downloads">Downloads</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3.html#copies">Copies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3.html#configuration-settings">Configuration Settings</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3.html#generating-presigned-urls">Generating Presigned URLs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3.html#generating-presigned-posts">Generating Presigned POSTs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/secrets-manager.html">AWS Secrets Manager</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/secrets-manager.html#prerequisite-tasks">Prerequisite Tasks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/secrets-manager.html#retrieve-the-secret-value">Retrieve the Secret Value</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/secrets-manager.html#example">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="services">
+<h3>Services<a class="headerlink" href="#services" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html">Available Services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html">ACM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html">ACMPCA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html">AlexaForBusiness</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html">APIGateway</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html">ApplicationAutoScaling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html">AppStream</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html">AppSync</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html">Athena</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html">AutoScaling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html">AutoScalingPlans</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html">Batch</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html">Budgets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html">CostExplorer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html">Cloud9</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html">CloudDirectory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html">CloudFormation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#waiters">Waiters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#service-resource">Service Resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#event">Event</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#stack">Stack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#stackresource">StackResource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#stackresourcesummary">StackResourceSummary</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html">CloudFront</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#waiters">Waiters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html">CloudHSM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html">CloudHSMV2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html">CloudSearch</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html">CloudSearchDomain</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#client">Client</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html">CloudTrail</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html">CloudWatch</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#waiters">Waiters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#service-resource">Service Resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#alarm">Alarm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#metric">Metric</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html">CodeBuild</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html">CodeCommit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html">CodeDeploy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html">CodePipeline</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html">CodeStar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html">CognitoIdentity</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html">CognitoIdentityProvider</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html">CognitoSync</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#client">Client</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html">Comprehend</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html">ConfigService</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html">Connect</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html">CostandUsageReportService</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html">DataPipeline</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html">DAX</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html">DeviceFarm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html">DirectConnect</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html">ApplicationDiscoveryService</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html">DLM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html">DatabaseMigrationService</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html">DirectoryService</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html">DynamoDB</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#waiters">Waiters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#service-resource">Service Resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#table">Table</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html">DynamoDBStreams</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html">EC2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#waiters">Waiters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#service-resource">Service Resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#classicaddress">ClassicAddress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#dhcpoptions">DhcpOptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#image">Image</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#instance">Instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#internetgateway">InternetGateway</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#keypair">KeyPair</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#keypairinfo">KeyPairInfo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#networkacl">NetworkAcl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#networkinterface">NetworkInterface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#networkinterfaceassociation">NetworkInterfaceAssociation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#placementgroup">PlacementGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#route">Route</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#routetable">RouteTable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#routetableassociation">RouteTableAssociation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#securitygroup">SecurityGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#snapshot">Snapshot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#subnet">Subnet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#tag">Tag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#volume">Volume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#vpc">Vpc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#vpcpeeringconnection">VpcPeeringConnection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#vpcaddress">VpcAddress</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html">ECR</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html">ECS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html">EFS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html">EKS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html">ElastiCache</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html">ElasticBeanstalk</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html">ElasticTranscoder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html">ElasticLoadBalancing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html">ElasticLoadBalancingv2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html">EMR</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html">ElasticsearchService</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html">CloudWatchEvents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html">Firehose</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html">FMS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html">GameLift</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html">Glacier</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#waiters">Waiters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#service-resource">Service Resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#account">Account</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#archive">Archive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#job">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#multipartupload">MultipartUpload</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#notification">Notification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#vault">Vault</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html">Glue</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html">Greengrass</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#client">Client</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html">GuardDuty</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html">Health</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html">IAM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#waiters">Waiters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#service-resource">Service Resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#accesskey">AccessKey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#accesskeypair">AccessKeyPair</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#accountpasswordpolicy">AccountPasswordPolicy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#accountsummary">AccountSummary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#assumerolepolicy">AssumeRolePolicy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#currentuser">CurrentUser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#group">Group</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#grouppolicy">GroupPolicy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#instanceprofile">InstanceProfile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#loginprofile">LoginProfile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#mfadevice">MfaDevice</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#policy">Policy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#policyversion">PolicyVersion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#role">Role</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#rolepolicy">RolePolicy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#samlprovider">SamlProvider</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#servercertificate">ServerCertificate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#signingcertificate">SigningCertificate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#user">User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#userpolicy">UserPolicy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#virtualmfadevice">VirtualMfaDevice</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html">ImportExport</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html">Inspector</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html">IoT</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html">IoTDataPlane</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#client">Client</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html">IoTJobsDataPlane</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html">IoT1ClickDevicesService</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#client">Client</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html">IoT1ClickProjects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html">IoTAnalytics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html">Kinesis</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html">KinesisVideoArchivedMedia</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html">KinesisVideoMedia</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html">KinesisAnalytics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html">KinesisVideo</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html">KMS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html">Lambda</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html">LexModelBuildingService</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html">LexRuntimeService</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html">Lightsail</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html">CloudWatchLogs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html">MachineLearning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html">Macie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html">MarketplaceEntitlementService</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html">MarketplaceCommerceAnalytics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html">MediaConvert</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#client">Client</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html">MediaLive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html">MediaPackage</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html">MediaStore</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html">MediaStoreData</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html">MediaTailor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html">MarketplaceMetering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#client">Client</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html">MigrationHub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html">Mobile</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html">MQ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html">MTurk</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html">Neptune</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html">OpsWorks</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#waiters">Waiters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#service-resource">Service Resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#layer">Layer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#stack">Stack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#stacksummary">StackSummary</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html">OpsWorksCM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html">Organizations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html">PI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html">Pinpoint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#client">Client</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html">Polly</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html">Pricing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html">RDS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html">Redshift</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html">Rekognition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html">ResourceGroups</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html">ResourceGroupsTaggingAPI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html">Route53</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html">Route53Domains</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html">S3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#waiters">Waiters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#service-resource">Service Resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucket">Bucket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucketacl">BucketAcl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucketcors">BucketCors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucketlifecycle">BucketLifecycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucketlifecycleconfiguration">BucketLifecycleConfiguration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucketlogging">BucketLogging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucketnotification">BucketNotification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucketpolicy">BucketPolicy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucketrequestpayment">BucketRequestPayment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#buckettagging">BucketTagging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucketversioning">BucketVersioning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucketwebsite">BucketWebsite</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#multipartupload">MultipartUpload</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#multipartuploadpart">MultipartUploadPart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#object">Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#objectacl">ObjectAcl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#objectsummary">ObjectSummary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#objectversion">ObjectVersion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html">SageMaker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html">SageMakerRuntime</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html">SimpleDB</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html">SecretsManager</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html">ServerlessApplicationRepository</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html">ServiceCatalog</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html">ServiceDiscovery</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html">SES</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html">Shield</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html">signer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#waiters">Waiters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html">SMS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html">Snowball</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html">SNS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#service-resource">Service Resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#platformapplication">PlatformApplication</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#platformendpoint">PlatformEndpoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#subscription">Subscription</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#topic">Topic</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html">SQS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#paginators">Paginators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#service-resource">Service Resource</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#message">Message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#queue">Queue</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html">SSM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html">SFN</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html">StorageGateway</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html">STS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html">Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html">SWF</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html">TranscribeService</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html">Translate</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html">WAF</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html">WAFRegional</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html">WorkDocs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html">WorkMail</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html">WorkSpaces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#paginators">Paginators</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html">XRay</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#client">Client</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#paginators">Paginators</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="core">
+<h3>Core<a class="headerlink" href="#core" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/index.html">Core References</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/boto3.html">Boto3 Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/collections.html">Collections Reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/resources.html">Resources Reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/resources.html#module-boto3.resources.model">Resource Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/resources.html#module-boto3.resources.params">Request Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/resources.html#module-boto3.resources.response">Response Handlers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/resources.html#module-boto3.resources.action">Resource Actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/resources.html#module-boto3.resources.base">Resource Base</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/resources.html#module-boto3.resources.factory">Resource Factory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/session.html">Session Reference</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="customizations">
+<h3>Customizations<a class="headerlink" href="#customizations" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/index.html">Customization References</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/dynamodb.html">DynamoDB Customization Reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/dynamodb.html#valid-dynamodb-types">Valid DynamoDB Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/dynamodb.html#custom-boto3-types">Custom Boto3 Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/dynamodb.html#dynamodb-conditions">DynamoDB Conditions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html">S3 Customization Reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html#s3-transfers">S3 Transfers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="https://boto3.amazonaws.com/v1/documentation/api/latest/search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html" title="next chapter (use the right arrow)">Quickstart</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/genindex.html" title="General Index">index</a></li>
+        <li class="right">
+          <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/py-modindex.html" title="Python Module Index">modules</a> |</li>
+        <li class="right">
+          <a href="https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html" title="Quickstart">next</a> |</li>
+        <li><a href="#">Boto 3 Docs 1.9.8 documentation</a> »</li> 
+      </ul>
+    </div>
+
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="index_files/bootstrap.js"></script>
+  <div class="footer">
+    © Copyright 2014, Amazon.com, Inc.. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+<script type="text/javascript" src="index_files/s_code.js"></script>
+<script type="text/javascript">
+s.prop66 = 'AWS SDK for Python (boto3)';
+s.eVar66 = 'D=c66';
+s.prop65 = 'API Reference';
+s.eVar65 = 'D=c65';
+var s_code = s.t();
+if (s_code) document.write(s_code);
+</script>
+  
+</body></html>
